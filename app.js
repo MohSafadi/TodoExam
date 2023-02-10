@@ -11,8 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 mongoose.set('strictQuery', false)
 
-const uri = "mongodb+srv://<admin-safadi>:<Safadi95>@clustername.mongodb.net/TodoListExam";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+mongoose.connect("mongodb+srv://<admin-safadi>:<Safadi95>@clustername.mongodb.net/TodoListExam");
 
 
 const itemsSchema = {
