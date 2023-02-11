@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 mongoose.set('strictQuery', false)
 
-mongoose.connect("mongodb+srv://<admin-safadi>:<Safadi95>@clustername.mongodb.net/TodoListExam");
+mongoose.connect("mongodb+srv://admin-safadi:safadi95@cluster0.zompqse.mongodb.net/TodoListExam");
 
 
 const itemsSchema = {
